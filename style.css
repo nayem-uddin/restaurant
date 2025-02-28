@@ -1,0 +1,222 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*container design starts here*/
+.container {
+  max-width: 90%;
+  margin: auto;
+  /* font-family: "Roboto", serif;
+  font-family: "Montserrat", serif;
+  font-family: "Handlee", serif; */
+}
+/*container design ends here*/
+
+/*header design starts here*/
+header {
+  background-color: #24a19c;
+  padding: 0 1%;
+  text-align: center;
+}
+/*header design ends here*/
+
+/*logo design starts here*/
+.logo {
+  width: 80px;
+  height: 80px;
+  line-height: 70px;
+  padding-top: 15px; /*creates a gap between border circle and logo*/
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+/*logo design ends here*/
+
+/*navigation menu design starts here*/
+nav ul {
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Roboto", serif;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*navigation menu design ends here*/
+
+/*banner design starts here*/
+#banner {
+  background-image: url(images/banner.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner-contents {
+  padding: 50px 10px;
+  text-align: center;
+}
+#banner-contents h1 {
+  margin: 15px auto;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 0, 0.884);
+  border-radius: 5px;
+  font-family: "Handlee", serif;
+}
+#banner-contents p {
+  width: 300px;
+  margin: 15px auto;
+  background-color: rgb(0, 128, 0);
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+.btn {
+  width: 200px;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 128, 0);
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.2);
+  background-color: violet;
+  color: darkblue;
+}
+/*banner design ends here*/
+
+/*about us starts*/
+#about-us {
+  padding: 1%;
+}
+.about-us-contents {
+  text-align: center;
+}
+.about-us-contents h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.about-us-contents p {
+  margin-bottom: 10px;
+}
+/*about us ends*/
+
+/*menu starts*/
+#food-menu {
+  padding: 1%;
+}
+.card {
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card-body {
+  text-align: center;
+}
+.card-body img {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+.card-desc {
+  background-color: rgb(165, 164, 164);
+}
+.item-name {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+.card-desc p {
+  font-size: 0.8rem;
+  padding: 10px;
+  font-weight: bold;
+}
+/*menu ends*/
+
+/* contact starts */
+#contact {
+  padding: 1%;
+  background-color: #595b83;
+}
+.map {
+  height: 250px;
+  width: 100%;
+}
+.contact-details {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.contact-details p,
+address {
+  font-size: 0.8rem;
+}
+/* contact ends */
+
+/* footer starts */
+footer {
+  padding: 1%;
+  color: white;
+  background-color: #060930;
+}
+footer p {
+  line-height: 32px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.socials {
+  text-align: center;
+}
+.icon-style {
+  color: white;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding-top: 7px;
+  margin: 0 10px;
+  transition: 0.4s;
+  text-align: center;
+}
+.icon-style:hover {
+  background-color: gray;
+  transform: scale(1.2);
+}
+/* footer ends */
+
+[class*="col-"] {
+  width: 100%; /*for smaller devices, every column takes 100% width*/
+  float: left;
+  padding: 15px;
+}
+.row {
+  width: 100%;
+}
+.row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
